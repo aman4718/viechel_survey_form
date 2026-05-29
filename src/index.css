@@ -1,0 +1,26 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+:root {
+  --blue: #1a56db;
+  --blue-dark: #1e429f;
+  --blue-light: #ebf5ff;
+  --border: #d1d5db;
+  --border-focus: #1a56db;
+  --bg: #ffffff;
+  --bg-alt: #f9fafb;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --danger: #dc2626;
+  --green: #16a34a;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --radius: 8px;
+}

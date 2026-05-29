@@ -1,0 +1,298 @@
+.sheet {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.sheetTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e429f;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid #1a56db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  background: #1e429f;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 20px 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.field label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 13px;
+  color: #111827;
+  background: #fff;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #1a56db;
+  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+}
+
+.field textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* Parts table */
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.partsTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px;
+  font-size: 12px;
+}
+
+.partsTable th {
+  background: #f3f6fc;
+  color: #374151;
+  font-weight: 600;
+  padding: 8px 6px;
+  text-align: left;
+  border-bottom: 1px solid #d1d5db;
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+.partsTable td {
+  padding: 4px 4px;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.partsTable tbody tr:hover {
+  background: #f9fafb;
+}
+
+.partsTable input,
+.partsTable select {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 5px 7px;
+  font-size: 12px;
+  color: #111827;
+  background: #fff;
+  outline: none;
+}
+
+.partsTable input:focus,
+.partsTable select:focus {
+  border-color: #1a56db;
+  box-shadow: 0 0 0 2px rgba(26, 86, 219, 0.1);
+}
+
+.slNo {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 11px;
+  width: 32px;
+}
+
+.calcCell {
+  background: #f3f6fc;
+  color: #1e429f;
+  font-weight: 500;
+  text-align: right;
+  padding: 5px 8px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.totalRow td {
+  background: #ebf5ff;
+  font-weight: 700;
+  color: #1e429f;
+  border-top: 2px solid #1a56db;
+  padding: 7px 8px;
+}
+
+.totalLabel {
+  font-size: 12px;
+}
+
+.delBtn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.delBtn:hover {
+  color: #dc2626;
+  background: #fee2e2;
+}
+
+.addRowBtn {
+  margin-top: 8px;
+  background: none;
+  border: 1px dashed #1a56db;
+  color: #1a56db;
+  border-radius: 5px;
+  padding: 5px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.addRowBtn:hover {
+  background: #ebf5ff;
+}
+
+/* Labour */
+.labourBlock {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.labourRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 14px;
+  border-bottom: 1px solid #f3f4f6;
+  gap: 12px;
+  font-size: 12px;
+  color: #374151;
+}
+
+.labourRow:last-child {
+  border-bottom: none;
+}
+
+.amtInput {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 140px;
+  flex-shrink: 0;
+}
+
+.amtInput span {
+  padding: 6px 8px;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 13px;
+  border-right: 1px solid #d1d5db;
+}
+
+.amtInput input {
+  border: none;
+  outline: none;
+  padding: 6px 10px;
+  font-size: 13px;
+  width: 100px;
+  color: #111827;
+}
+
+.netRow {
+  background: #1e429f;
+  color: #fff;
+}
+
+.netRow span {
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+}
+
+.netAmt {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  min-width: 140px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Observations */
+.obsTextarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 13px;
+  color: #111827;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+  line-height: 1.6;
+}
+
+.obsTextarea:focus {
+  border-color: #1a56db;
+  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+}
+
+.surveyorRow {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.surveyorLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-top: 1px solid #374151;
+  display: inline-block;
+  padding-top: 4px;
+}
