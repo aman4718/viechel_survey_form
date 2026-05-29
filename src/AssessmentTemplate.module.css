@@ -264,3 +264,84 @@
   min-width: 140px;
   text-align: right;
 }
+@media (max-width: 640px) {
+  .sheet {
+    padding: 14px 12px;
+    border-radius: 6px;
+  }
+
+  .sheetTitle {
+    font-size: 13px;
+  }
+
+  .sectionLabel {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .headerGrid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .tableWrap {
+    border-radius: 4px;
+  }
+
+  .partsTable {
+    font-size: 11px;
+    min-width: 700px;
+  }
+
+  .partsTable th,
+  .partsTable td {
+    padding: 4px 3px;
+  }
+
+  .labourRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 10px 10px;
+  }
+
+  .labourRow label {
+    font-size: 11px;
+  }
+
+  .amtInput {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .amtInput input {
+    width: 100%;
+    flex: 1;
+  }
+
+  .calcAmt {
+    min-width: unset;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .netLiabilityRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .netAmt {
+    min-width: unset;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .addRowBtn {
+    font-size: 13px;
+    padding: 8px 16px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+}
